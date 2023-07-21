@@ -1,14 +1,24 @@
-This app using Laravel Livewire
+# Laravel Livewire Simple CRUD - Contact App and Live Count
 
 In this app have two feature
 1. Simple CRUD Contact
 2. Live Count Nominal for auction
 
+```bash
+composer install / update
+```
+```bash
+npm install 
+```
 
-# composer install / update
-# npm install 
+```bash
+php artisan migrate --seed
+```
 
-# php artisan migrate --seed
+```bash
+php artisan serve
+```
 
-# php artisan serve
-# npm run dev
+```bash
+npm run dev
+```
