@@ -1,0 +1,78 @@
+/* Define a CSS variable to store the window height */
+:root {
+    --window-height: 70vh;
+    --window-height2: 65vh;
+    --window-height3: 55vh;
+}
+
+/* Set the height of the element to the window height */
+.full-height {
+height: var(--window-height);
+}
+
+/* Big font size and pretty effects */
+.big-font {
+font-size: 80px;
+font-weight: bold;
+color: #ff6f61;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+border: 2px solid #ff6f61;
+padding: 10px;
+border-radius: 10px;
+background-image: linear-gradient(45deg, #ff6f61, #ffcc66);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+transition: transform 0.2s;
+}
+
+.big-font:hover {
+transform: scale(1.1);
+}
+
+/* Create the zooming animation */
+@keyframes zoomAnimation {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.1); /* Zoom in to 120% */
+}
+100% {
+    transform: scale(1); /* Back to original size */
+}
+}
+
+/* Apply the animation to the target element */
+.zooming-element {
+animation: zoomAnimation 4s infinite;
+}
+
+.full-height2 {
+height: var(--window-height2);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 200px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+.table-wrapper {
+    overflow: auto; 
+    display:inline-block;
+    width: 100%;
+}
+
+.full-height3 {
+  height: var(--window-height3);
+}
+
+thead{
+    position:sticky;
+    top:0;
+}
